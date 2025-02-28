@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { ShowIncrement } from "./ShowIncrement";
 
 
@@ -16,6 +16,10 @@ export const CallbackHook = () => {
     // const incrementFather = () => {
     //     setCounter(counter + 1);
     // }
+
+    useEffect(() => {
+
+    }, [incrementFather]); //Si incrementFather cambia, se dispara el efecto
 
 
     return(
