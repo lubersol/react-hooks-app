@@ -18,12 +18,13 @@ export const useForm = ( initialForm = {} ) => {
         const onResetForm = () => {
             setFormState( initialForm);
         };
-    
+
     return {
         ...formState,
         formState,
         onInputChange,
         onResetForm,
+        onNewTodo
     }
         
 }
